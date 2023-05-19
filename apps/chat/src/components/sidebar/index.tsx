@@ -91,7 +91,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
             <div className={styles["sidebar-sub-title"]}>
               {Locale.Index.SubTitle}{" "}
               <span className={styles["sidebar-ad"]}>{wechatOA}</span>
-              <img src="./wechat_gongzong.png" alt="扫码关注微信公众号" />
+              <img src="/images/wechat_gongzong.png" alt="扫码关注微信公众号" />
             </div>
           )}
           <div className={styles["sidebar-logo"]}>
