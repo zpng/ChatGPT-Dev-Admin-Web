@@ -11,7 +11,6 @@ export default function Index() {
     return (
         <div className={styles["content"]}>
             <h2 className={styles["text"]}>ChatGPT 3.5/4.0</h2>
-            <h4 className={styles["text"]}>除标准功能外，插件和联网功能开发中 敬请期待...</h4>
             <div className={styles["buttons"]}>
                 <button
                     className={styles["button"]}
@@ -26,6 +25,7 @@ export default function Index() {
                     {Locales.Index.Register}
                 </button>
             </div>
+            {/*<h4 className={styles["text"]}>除标准功能外，插件和联网功能开发中 敬请期待...</h4>*/}
         </div>
     );
 }
