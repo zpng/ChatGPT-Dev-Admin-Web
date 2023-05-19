@@ -54,7 +54,7 @@ const prices: Price[] = [
             yearly: 799,
         },
         features: [
-            "New Bing 免费",
+            // "New Bing 免费",
             "每三小时 100 次 GPT-3.5 问答",
             "每天 30 次 GPT-4 问答",
         ],
