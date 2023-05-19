@@ -135,7 +135,7 @@ export default function Register() {
       <form className={styles["login-form"]} onSubmit={handleRegister}>
         <ReturnButton onClick={() => router.push("/enter")} />
 
-        <h2 className={styles["login-form-title"]}>Register</h2>
+        <h2 className={styles["login-form-title"]}>注册</h2>
         <div className={styles["login-form-input-group"]}>
           <label htmlFor="email">邮箱</label>
           <input
@@ -173,7 +173,7 @@ export default function Register() {
                 onClick={handleSendVerification}
                 disabled={submitting}
               >
-                {isSending ? "Already Send to Email" : "Get Code"}
+                {isSending ? "已发送至邮箱" : "获取验证码"}
               </button>
             </div>
           </div>

@@ -75,7 +75,7 @@ export default function Login() {
         <form className={styles["login-form"]} onSubmit={handleLogin}>
           <ReturnButton onClick={() => router.push("/enter")} />
 
-          <h2 className={styles["login-form-title"]}>Login</h2>
+          <h2 className={styles["login-form-title"]}>登录</h2>
           <div className={styles["login-form-input-group"]}>
             <label htmlFor="email">邮箱</label>
             <input
