@@ -86,7 +86,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          {/*<div className={styles["sidebar-title"]}>{Locale.Index.Title}</div>*/}
+          <div className={styles["sidebar-title"]}>{Locale.Index.Title}</div>
           {wechatOA && (
             <div className={styles["sidebar-sub-title"]}>
               {Locale.Index.SubTitle}{" "}
@@ -97,11 +97,11 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
           </div>
-          <div className={styles["sidebar-title"]}>{Locale.Index.Title}</div>
-        </div>
 
-        <hr className={styles["beautiful-divider"]} />
+        </div>
+        &nbsp;
         <div className={styles["sidebar-header-bar"]}>
+          <p></p>
           <IconButton
             icon={<UserIcon />}
             text="个人中心"
