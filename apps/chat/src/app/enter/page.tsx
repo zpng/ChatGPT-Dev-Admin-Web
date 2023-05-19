@@ -11,7 +11,8 @@ export default function Index() {
     return (
         <div className={styles["login-page"]}>
             <div className={styles["content"]}>
-                <h2 className={styles["text"]}>ChatGPT 3.5/4.0</h2>
+                <h1 className={styles["text"]}>ChatGPT 3.5/4.0</h1>
+                <h3 className={styles["text"]}>除标准功能外，GPT4最新推出的插件和联网功能开发中 敬请期待...</h3>
                 <div className={styles["buttons"]}>
                     <button
                         className={styles["button"]}
@@ -28,7 +29,6 @@ export default function Index() {
                 </div>
 
             </div>
-            <h4 className={styles["text"]}>除标准功能外，GPT4最新推出的插件和联网功能开发中 敬请期待...</h4>
         </div>
 
     );
