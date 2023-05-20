@@ -54,7 +54,7 @@ const cn = {
     },
     Invite: {
       Title: "邀请他人",
-      SubTitle: "成功邀请他人可获得重置次数以及会员，每邀请10个新用户注册送1个月Pro会员，每邀请15个用户送1个月Premium会员",
+      SubTitle: "成功邀请他人可获得重置次数以及会员，每邀请10个新用户注册送1个月Pro会员",
       Code: "邀请码",
       InviteLink: "邀请链接",
       CopyInviteLink: "复制邀请链接",
