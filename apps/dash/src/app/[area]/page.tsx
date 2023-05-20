@@ -33,6 +33,7 @@ export default function Page({
   const [cursor, setCursor] = useState<number>(0);
   const [count, setCount] = useState<number>(100);
   const [key, setKey] = useState<string>("");
+  const [plan, setPlan] = useState<string>("");
 
   const { data, isLoading } = useSWR(
     `/api/${params.area}?cursor=${cursor}&count=${count}&key=${key}` as string,
@@ -46,7 +47,7 @@ export default function Page({
     bindings: bindSearchUser,
   } = useInput("");
 
-  useEffect(() => {}, [searchUser]);
+  useEffect(() => {}, [searchUser,plan]);
 
   let columns;
   switch (params.area) {
@@ -70,6 +71,7 @@ export default function Page({
 
   const handleSearch = () => {
     setKey(searchUser);
+    setPlan(plan);
   };
 
   if (isLoading) return <Loading />;
@@ -83,10 +85,10 @@ export default function Page({
 
             <Spacer w={5} />
 
-            <Select placeholder="订阅计划">
-              <Select.Option value="1">Free</Select.Option>
-              <Select.Option value="2">Pro</Select.Option>
-              <Select.Option value="3">Premium</Select.Option>
+            <Select placeholder="订阅计划" >
+              <Select.Option value="free">Free</Select.Option>
+              <Select.Option value="pro">Pro</Select.Option>
+              <Select.Option value="premium">Premium</Select.Option>
             </Select>
             <Spacer w={5} />
 

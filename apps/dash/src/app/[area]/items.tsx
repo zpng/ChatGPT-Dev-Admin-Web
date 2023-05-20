@@ -60,6 +60,10 @@ export const userColumn: TableColumnType[] = [
     label: "用户名",
   },
   {
+    prop: "user",
+    label: "邮箱",
+  },
+  {
     prop: "subscriptions",
     label: "订阅",
     render: planRender,
