@@ -38,7 +38,7 @@ const prices: Price[] = [
         features: ["每小时 10 次 GPT-3.5 免费问答", "每天 1 次 GPT-4 免费问答"],
     },
     {
-        name: "Pro",
+        name: "Pro (限时优惠: 除付费外还可通过个人邀请链接(个人中心获得)去邀请新用户注册来获得，每邀请10个新用户注册送1个月, 暂时每天定时统计, 会员到账会有延迟, 后续会自动统计到账)",
         price: {
             monthly: 24,
             quarterly: 63,
@@ -47,7 +47,7 @@ const prices: Price[] = [
         features: ["每三小时 60 次 GPT-3.5 问答", "每天 10 次 GPT-4 问答"],
     },
     {
-        name: "Premium",
+        name: "Premium (限时优惠: 除付费外还可通过个人邀请链接(个人中心获得)去邀请新用户注册来获得，每邀请15个新用户注册送1个月, 暂时每天定时统计, 会员到账会有延迟, 后续会自动统计到账)",
         price: {
             monthly: 103,
             quarterly: 260,

@@ -63,7 +63,10 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
   // 设置
   const config = useSettingStore((state) => state.config);
 
-  const notice = useNoticeStore((store) => store.notice) ?? "当前无公告";
+  // const notice = useNoticeStore((store) => store.notice) ?? "当前无公告";
+
+  const notice = "限时优惠：可通过邀请新用户注册来获得会员赠送，每邀请10个人送1个月Pro会员，每邀请15个人送1个月Premium会员，个人邀请链接在个人中心获得";
+
 
   const { data: rateLimit, isLoading: rateLimitLoading } = useLimit();
 
